@@ -18,6 +18,7 @@ pipeline {
       post {
         always {
            sh 'pwd'
+           sh 'echo date'
         }
       }
     }
