@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!--Bootstrap CSS-->
+<link rel="stylesheet"
+	href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--Bootstrap JS-->
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/webjars/activiti-web-deps/prakash.js"></script>
+</head>
+<body>
+	<h1>Sample Page</h1>
+	<button id="fetchId">Fetch Data and Print log</button>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#fetchId").click(function() {
+				$.get("demo_test.asp", function(data, status){
+			        alert("Data: " + data + "\nStatus: " + status);
+			    });
+			});
+		});
+	</script>
+</body>
+</html>
