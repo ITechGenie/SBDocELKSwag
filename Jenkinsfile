@@ -25,6 +25,7 @@ pipeline {
     stage('StartApps') {
     	steps {
 	       sh 'pwd'
+	          sh 'echo date'
        }
     }
   }
